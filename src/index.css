@@ -1,14 +1,88 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: RobotoCondensed;
+  src: url(assets/roboto-condensed.light.ttf);
+  font-weight: 800;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+  font-family: EconomicaBold;
+  src: url(assets/economica-bold.ttf);
+}
+
+body {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'RobotCondensed';
+}
+
+h1, h2, h3, h4 {
+  font-family: 'EconomicaBold';
+}
+
+button {
+  background-color: #4286f4;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #71a0ed;
+  transition: .2s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+}
+
+i {
+  font-size: 3em;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.project {
+  padding: 50px;
+  display: block;
+}
+
+.project p {
+  vertical-align: middle;
+}
+
+.project img {
+  border-radius: 5%;
+}
+
+.projectImg {
+  width: 50%;
+}
+
+.projectInfo {
+  width: 50%;
+  padding: 50px;
+}
+
+.social {
+  color: #4286f4;
+}
+
+#header {
+  padding-top: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./assets/nyc2.jpg');
+  background-attachment: fixed;
+  height: 100vh;
+  color: #2C3E50;
+}
+
+#projects {
+  background-color: #FC4349;
+  color: #FFFFFF;
 }
