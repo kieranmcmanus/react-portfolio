@@ -17,8 +17,7 @@ class SocialProfiles extends Component {
   render() {
     return (
       <div>
-        <h2>Connect with me!</h2>
-        <div>
+        <div id='social'>
           {
             SOCIAL_PROFILES.map(SOCIAL_PROFILE => {
               return <SocialProfile key={SOCIAL_PROFILE.id} socialProfile={SOCIAL_PROFILE} />;

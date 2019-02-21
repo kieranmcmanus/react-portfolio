@@ -7,7 +7,7 @@ class ProjectOdd extends Component {
     const { title, image, description, link, linkDesc } = this.props.project;
 
     return (
-      <div style={{ display: 'flex', margin: 10 }} className='project'>
+      <div className='project'>
         <div className='projectImg'>
           <img src={image} alt='profile'/>
         </div>
@@ -27,7 +27,7 @@ class ProjectEven extends Component {
     const { title, image, description, link, linkDesc } = this.props.project;
 
     return (
-      <div style={{ display: 'flex', margin: 10 }} className='project'>
+      <div className='project'>
         <div className='projectInfo'>
           <h3>{title}</h3>
           <a href={link}>{linkDesc}</a>
@@ -45,7 +45,7 @@ class Projects extends Component {
   render() {
     return (
       <div id='projects'>
-        <h2>Highlighted Projects</h2>
+        <h2 style={{ padding: 50 }}>Highlighted Projects</h2>
         <div>
           {
             PROJECTS.map(PROJECT => {
