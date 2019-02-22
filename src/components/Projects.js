@@ -9,7 +9,7 @@ class ProjectOdd extends Component {
     return (
       <div className='project'>
         <div className='projectImg'>
-          <img src={image} alt='profile'/>
+          <a href={link} target="_blank"><img src={image} alt='profile'/></a>
         </div>
         <div className='projectInfo'>
           <h3>{title}</h3>
@@ -34,7 +34,7 @@ class ProjectEven extends Component {
           <p>{description}</p>
         </div>
         <div className='projectImg'>
-          <img src={image} alt='profile'/>
+          <a href={link} target="_blank"><img src={image} alt='profile'/></a>
         </div>
       </div>
     )
