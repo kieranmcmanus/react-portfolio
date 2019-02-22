@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SocialProfiles from './SocialProfiles';
-import profile from './assets/profile.png';
+import profile from '../assets/profile.png';
 
 class Bio extends Component {
 

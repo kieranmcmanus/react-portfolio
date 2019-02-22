@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Menu from './Menu';
 import Header from './Header';
 import Bio from './Bio';
 import Projects from './Projects';
@@ -8,6 +9,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Menu />
         <Header />
         <Bio />
         <Skills />

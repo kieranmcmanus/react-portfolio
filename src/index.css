@@ -33,6 +33,7 @@ h2 {
 h3 {
   font-size: 36px;
   letter-spacing: 0.5em;
+  font-weight: bold;
 }
 
 button {
@@ -69,7 +70,7 @@ i:hover {
 }
 
 .project {
-  padding: 50px;
+  padding: 100px 50px;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
@@ -95,9 +96,18 @@ i:hover {
   width: 35%;
 }
 
-.project a {
+.projectInfo a {
   text-decoration: none;
   color: #FFFFFF;
+  font-weight: bold;
+}
+
+.projectInfo h3 {
+  padding: 50px;
+}
+
+.projectInfo p {
+  padding: 50px;
 }
 
 .social {
@@ -108,7 +118,9 @@ i:hover {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 50px;
+  width: 60vw;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .skill {
@@ -154,6 +166,24 @@ i:hover {
 
 #skills {
   padding: 50px;
+}
+
+nav a {
+  text-decoration: none !important;
+  font-size:16px;
+  display: inline-block;
+  border-bottom: none;
+  text-transform: uppercase;
+  padding: 5px;
+  color: #2C3E50;
+}
+nav a:hover {
+  color: #FC4349 !important;
+  cursor: pointer;
+}
+
+nav {
+  opacity: .7;
 }
 
 /* ----------------------------------------
@@ -225,5 +255,113 @@ Scroll arrow
   }
   40% {
     transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+/* ----------------------------------------
+Media Queries
+------------------------------------------- */
+@media screen and (max-width: 1650px) {
+  .skill {
+    max-width: 75px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  h2 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 32px;
+    letter-spacing: 0.3em;
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #skills {
+    padding: 10px 10px 100px 10px;
+  }
+  .skills_icons img {
+    margin: 0;
+  }
+  .project {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    display: block;
+  }
+  .projectInfo, .projectImg {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #bio p {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .projectInfo h3 {
+    padding: 25px;
+  }
+
+  .projectInfo p {
+    padding: 25px;
+    font-size: 16px;
+  }
+  .project {
+    padding: 25px 50px;
+  }
+  .projectInfo a {
+    font-size: 16px;
+  }
+  h1{
+    font-size: 48px;
+    letter-spacing: 0.3em;
+  }
+
+  h2 {
+    font-size: 36px;
+    letter-spacing: 0.1em;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  i {
+    font-size: 2em;
+    padding: 5px;
+    color: #FFFFFF;
+  }
+  #social {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    background-attachment: scroll !important;
+    background-position: center center !important;
+  }
+  .skill {
+    padding: 5px;
+  }
+  #bio p {
+    width: 100%;
+  }
+  .projectInfo p {
+    padding: 10px;
+  }
+  .project {
+    padding: 50px 10px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .arrow-wrap {
+    display: none;
   }
 }

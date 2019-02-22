@@ -6,7 +6,7 @@ const PROJECTS = [
   {
     id: 1,
     title: 'The McManus Report.',
-    description: 'Loudoun Music Instruction is a small business music instruction school in Lovettsville, Virginia. The site was constructed with a custom Wordpress theme, built from the ground up with PHP, Bootstrap, Javascript, jQuery, HTML & CSS, featuring a fully functional blog, event calendars, registration form, contact form, custom branding/design/photography, and all info necessary for any small business.',
+    description: 'The McManus Report is a web app built using React and Node.js, interacting with the News API (news.api.org).  Users can see US Top Stories updated in real-time, as well as filter by news category.',
     link: 'https://the-mcmanus-report.herokuapp.com/',
     linkDesc: 'Heroku',
     image: news
