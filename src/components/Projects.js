@@ -9,11 +9,11 @@ class ProjectOdd extends Component {
     return (
       <div className='project'>
         <div className='projectImg'>
-          <img src={image} alt='profile'/>
+          <a href={link} target="_blank"><img src={image} alt='profile'/></a>
         </div>
         <div className='projectInfo'>
           <h3>{title}</h3>
-          <a href={link}>{linkDesc}</a>
+          <a href={link} target="_blank">{linkDesc}</a>
           <p>{description}</p>
         </div>
       </div>
@@ -30,11 +30,11 @@ class ProjectEven extends Component {
       <div className='project'>
         <div className='projectInfo'>
           <h3>{title}</h3>
-          <a href={link}>{linkDesc}</a>
+          <a href={link} target="_blank">{linkDesc}</a>
           <p>{description}</p>
         </div>
         <div className='projectImg'>
-          <img src={image} alt='profile'/>
+          <a href={link} target="_blank"><img src={image} alt='profile'/></a>
         </div>
       </div>
     )

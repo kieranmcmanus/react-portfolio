@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <div id='header'>
         <h1>Kieran McManus</h1>
-        <h3>Front End Developer</h3>
+        <h3>Full Stack Developer</h3>
         <a className="arrow-wrap" href="#bio"><span className="arrow"></span></a>
       </div>
     )

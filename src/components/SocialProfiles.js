@@ -7,7 +7,7 @@ class SocialProfile extends Component {
 
     return (
         <span style={{ margin: 10 }}>
-          <a href={link}><i className={image}></i></a>
+          <a href={link} target="_blank"><i className={image}></i></a>
         </span>
     )
   }
